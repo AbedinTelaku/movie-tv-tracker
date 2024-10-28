@@ -1,0 +1,99 @@
+.footer-main {
+    background-color: #242020;
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-main h2 {
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .footer-main ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-main li {
+    font-size: 16px;
+    color: #b3b3b3;
+    margin-bottom: 10px;
+  }
+  
+  .footer-main li:hover {
+    color: #e50914; /* Ngjyra e kuqe që përdor Netflix */
+    cursor: pointer;
+  }
+  
+  .explore, .company {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
+  
+  .ul-list {
+    padding-right: 50px;
+  }
+  
+  .social-media {
+    width: 20%;
+  }
+  
+  .social-icons i {
+    font-size: 24px;
+    color: white;
+    margin-right: 15px;
+  }
+  
+  .social-icons i:hover {
+    color: #e50914;
+    cursor: pointer;
+  }
+  
+  .newsletter {
+    width: 30%;
+    color: white;
+  }
+  
+  .newsletter p {
+    margin-bottom: 10px;
+  }
+  
+  .newsletter input {
+    width: 70%;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .newsletter button {
+    padding: 10px 20px;
+    background-color: #e50914;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletter button:hover {
+    background-color: #f40612;
+  }
+  
+  /* Stilizimi për seksionin e copyright-it */
+  .copyright-section {
+    width: 100%;
+    background-color: #e50914; /* Sfonda e kuqe për copyright */
+    text-align: center;
+    padding: 15px;
+    margin-top: 30px;
+  }
+  
+  .copyright-section p {
+    color: white;
+    font-size: 16px;
+    margin: 0;
+  }
+  

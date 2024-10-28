@@ -37,7 +37,7 @@ const FilmsComponent = () => {
       title: "Inception",
       duration: "2hr 28 mins",
       genre: "Sci-Fi",
-      imageUrl: "your-image-url6",
+      imageUrl: "https://i.ebayimg.com/images/g/B8oAAOSw2fdg5A-h/s-l1200.jpg",
     }
   ];
 
@@ -76,7 +76,7 @@ const FilmsComponent = () => {
       title: "Mad Max: Fury Road",
       duration: "2hr",
       genre: "Action",
-      imageUrl: "your-image-url6",
+      imageUrl: "https://m.media-amazon.com/images/I/81J6CaUe+GL.jpg",
     }
   ];
 
