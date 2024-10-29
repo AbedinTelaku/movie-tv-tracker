@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './FooterStyle.css';
 
 const FooterComponent = () => {
@@ -7,32 +8,32 @@ const FooterComponent = () => {
       <div className="explore">
         <h2>Explore</h2>
         <ul className='ul-list'>
-          <li>Home</li>
-          <li>TV Shows</li>
-          <li>Actors</li>
-          <li>Celebrity</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/tv-shows">TV Shows</Link></li>
+          <li><Link to="/actors">Actors</Link></li>
+          <li><Link to="/celebrity">Celebrity</Link></li>
         </ul>
         <ul className='ul-list'>
-          <li>Movies</li>
-          <li>Videos</li>
-          <li>Basketball</li>
-          <li>Cross</li>
+          <li><Link to="/movies">Movies</Link></li>
+          <li><Link to="/videos">Videos</Link></li>
+          <li><Link to="/basketball">Basketball</Link></li>
+          <li><Link to="/cross">Cross</Link></li>
         </ul>
       </div>
 
       <div className="company">
         <h2>Company</h2>
         <ul className='ul-list'>
-          <li>Company</li>
-          <li>Terms Of Use</li>
-          <li>Contact Us</li>
-          <li>Our Team</li>
+          <li><Link to="/company">Company</Link></li>
+          <li><Link to="/terms-of-use">Terms Of Use</Link></li>
+          <li><Link to="/contact">Contact Us</Link></li>
+          <li><Link to="/our-team">Our Team</Link></li>
         </ul>
         <ul className='ul-list'>
-          <li>Privacy Policy</li>
-          <li>Help Center</li>
-          <li>Subscribe</li>
-          <li>FAQ</li>
+          <li><Link to="/privacy-policy">Privacy Policy</Link></li>
+          <li><Link to="/help-center">Help Center</Link></li>
+          <li><Link to="/subscribe">Subscribe</Link></li>
+          <li><Link to="/faq">FAQ</Link></li>
         </ul>
       </div>
 
@@ -44,7 +45,6 @@ const FooterComponent = () => {
             <i className="fab fa-instagram"></i>
             <i className="fab fa-youtube"></i>
         </div>
-
       </div>
 
       <div className="newsletter">
