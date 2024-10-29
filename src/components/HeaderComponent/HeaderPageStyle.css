@@ -1,46 +1,97 @@
+/* Për body dhe html për të mbushur ekranin */
 body, html {
-    margin: 0;
-    padding: 0;
-    height: 100%;
-    width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
+
+/* Stilizimi i header-it */
 .header-main {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    padding: 20px 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    transition: background-color 0.5s ease;
-    background-color: rgba(128, 128, 128, 0.2);
-  }
-  
-  .header-main.scrolled {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-  
-  .logo {
-    width: 100px;
-    height: auto;
-  }
-  
-  .nav-links ul {
-    list-style: none;
-    display: flex;
-    margin: 0 35px;
-    padding: 0;
-  }
-  
-  .nav-links li {
-    margin: 0px 25px;
-    font-size: 18px;
-    cursor: pointer;
-    color: white;
-  }
-  
-  .nav-links li:hover {
-    color: #e50914;
-  }
-  
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  transition: background-color 0.5s ease;
+  background-color: rgba(128, 128, 128, 0.2);
+}
+
+.header-main.scrolled {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  width: 100px;
+  height: auto;
+}
+
+/* Stilizimi për nav links */
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  margin: 0 35px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin: 0px 25px;
+  font-size: 18px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links li:hover {
+  color: #e50914;
+}
+
+/* Stilizimi për ikonën e kërkimit */
+.search-icon {
+  font-size: 22px;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+
+
+/* Stilizimi për dropdown search bar */
+.search-dropdown {
+  position: absolute;
+  top: 60px; /* Pozicionohet poshtë header-it */
+  right: 90px;
+  background-color: rgba(0, 0, 0, 0.5); /* Sfonda e errët për kërkim */
+  padding: 10px;
+  border-radius: 2px;
+  z-index: 100; /* Sipër header-it */
+}
+
+.search-bar {
+  width: 200px;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: white;
+  font-size: 14px;
+}
+.button-search{
+  height: 37px;
+  padding: 5px;
+  margin-right: 20px;
+  margin: 1px 2px 0px 10px;
+  background-color: red;
+  color: white;
+}
+
+.search-bar:focus {
+  outline: none;
+  background-color: #444;
+}
+
+.search-bar::placeholder {
+  color: #bbb;
+}

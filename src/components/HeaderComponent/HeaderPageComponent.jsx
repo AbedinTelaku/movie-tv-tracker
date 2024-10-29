@@ -3,6 +3,8 @@ import "./HeaderPageStyle.css";
 
 const HeaderPageComponent = () => {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
@@ -19,6 +21,14 @@ const HeaderPageComponent = () => {
     };
   }, []);
 
+  const handleSearchClick = () => {
+    setIsSearchOpen(!isSearchOpen);
+  };
+
+  const handleSearchChange = (e) => {
+    setSearchTerm(e.target.value);
+  };
+
   return (
     <header className={`header-main ${isScrolled ? "scrolled" : ""}`}>
       <img
@@ -32,7 +42,21 @@ const HeaderPageComponent = () => {
           <li>Series</li>
           <li>Movies</li>
           <li>New & Popular</li>
-          <li>My List</li>
+          <li>
+            <i className="fas fa-search search-icon" onClick={handleSearchClick}></i>
+            {isSearchOpen && (
+              <div className="search-dropdown">
+                <input
+                  type="text"
+                  placeholder="Search..."
+                  value={searchTerm}
+                  onChange={handleSearchChange}
+                  className="search-bar"
+                />
+                <button className='fas fa-search search-icon button-search'></button>
+              </div>
+            )}
+          </li>
         </ul>
       </nav>
     </header>
