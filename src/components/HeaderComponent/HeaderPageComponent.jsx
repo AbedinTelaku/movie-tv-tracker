@@ -4,6 +4,7 @@ import "./HeaderPageStyle.css";
 const HeaderPageComponent = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
@@ -25,6 +26,10 @@ const HeaderPageComponent = () => {
     setIsSearchOpen(!isSearchOpen);
   };
 
+  const handleMenuToggle = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   const handleSearchChange = (e) => {
     setSearchTerm(e.target.value);
   };
@@ -36,7 +41,12 @@ const HeaderPageComponent = () => {
         alt="Netflix Logo"
         className="logo"
       />
-      <nav className="nav-links">
+      
+      <div className="hamburger" onClick={handleMenuToggle}>
+        <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
+      </div>
+      
+      <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>Home</li>
           <li>Series</li>
