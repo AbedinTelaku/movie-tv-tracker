@@ -7,17 +7,20 @@
   color: white;
   font-size: 24px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
 .films-list {
   display: flex;
   gap: 10px;
-  margin-left: 60px;
+  justify-content: center;
   flex-wrap: wrap;
+  margin: 0 auto;
 }
 
 .film-card {
   flex: 1 1 20%;
+  max-width: 250px;
   background-color: #222;
   color: white;
   border-radius: 8px;
@@ -56,4 +59,46 @@
 
 .film-info .genre {
   color: #ff3838;
+}
+
+@media (max-width: 768px) {
+  .film-card {
+    flex: 1 1 45%;
+    max-width: 45%;
+  }
+
+  .film-card img {
+    height: 250px;
+  }
+
+  .film-info h3 {
+    font-size: 16px;
+  }
+
+  .film-info p {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 480px) {
+  .films-container h2 {
+    font-size: 20px;
+  }
+
+  .film-card {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .film-card img {
+    height: 200px;
+  }
+
+  .film-info h3 {
+    font-size: 14px;
+  }
+
+  .film-info p {
+    font-size: 12px;
+  }
 }
