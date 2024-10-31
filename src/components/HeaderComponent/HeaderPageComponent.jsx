@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./HeaderPageStyle.css";
 
-const HeaderPageComponent = () => {
+const HeaderPageComponent = ({ onSearch }) => { // Accept onSearch as a prop
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -31,7 +31,9 @@ const HeaderPageComponent = () => {
   };
 
   const handleSearchChange = (e) => {
-    setSearchTerm(e.target.value);
+    const value = e.target.value;
+    setSearchTerm(value);
+    onSearch(value); // Pass the search term up to the parent
   };
 
   return (
@@ -41,11 +43,9 @@ const HeaderPageComponent = () => {
         alt="Netflix Logo"
         className="logo"
       />
-      
       <div className="hamburger" onClick={handleMenuToggle}>
         <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
       </div>
-      
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li>Home</li>
