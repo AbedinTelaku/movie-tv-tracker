@@ -12,7 +12,7 @@
 
 .films-list {
   display: flex;
-  gap: 10px;
+  gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
   margin: 0 auto;
