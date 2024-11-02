@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useMemo } from 'react';
+import './FilmStyle.css';
 
-const FilmsComponent = () => {
+const FilmsComponent = ({ searchTerm }) => {
     const [films, setFilms] = useState([]);
 
     useEffect(() => {
@@ -15,14 +16,34 @@ const FilmsComponent = () => {
             .catch(error => console.error('Error fetching films:', error));
     }, []);
 
+    const filteredFilms = useMemo(
+        () =>
+            films.filter((film) =>
+                film.title.toLowerCase().includes(searchTerm?.toLowerCase() || '')
+            ),
+        [searchTerm, films]
+    );
+
     return (
-        <div>
+        <div className="films-container">
             <h2>Popular Films</h2>
-            <ul>
-                {films.map(film => (
-                    <li key={film.id}>{film.title}</li>
+            <div className="films-list">
+                {filteredFilms.map((film) => (
+                    <div className="film-card" key={film.id}>
+                        <img
+                            src={`https://image.tmdb.org/t/p/w500${film.poster_path}`}
+                            alt={film.title}
+                        />
+                        <div className="film-info">
+                            <h3>{film.title}</h3>
+                            <p>
+                                {film.release_date} <span className="dot">•</span>{" "}
+                                <span className="genre">Genre</span>
+                            </p>
+                        </div>
+                    </div>
                 ))}
-            </ul>
+            </div>
         </div>
     );
 };
