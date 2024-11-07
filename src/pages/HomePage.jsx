@@ -5,14 +5,14 @@ import FilmsComponent from '../components/ListOfFilmsComponent/FilmsComponent';
 import Footer from './Footer';
 
 const HomePage = () => {
-  const [searchTerm, setSearchTerm] = useState(""); // State for search term
+  const [searchTerm, setSearchTerm] = useState("");
 
   return (
     <div>
-      <HeaderPageComponent onSearch={setSearchTerm} />  {/* Pass setSearchTerm as onSearch */}
-      <HomePageComponent />    {/* Main homepage content */}
-      <FilmsComponent searchTerm={searchTerm} />       {/* Pass searchTerm to FilmsComponent */}
-      <Footer />               {/* Footer at the bottom */}
+      <HeaderPageComponent onSearch={setSearchTerm} />
+      <HomePageComponent />
+      <FilmsComponent searchTerm={searchTerm} />
+      <Footer />
     </div>
   );
 };
