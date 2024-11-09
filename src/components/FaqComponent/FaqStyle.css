@@ -1,14 +1,15 @@
 .faq-page {
     margin: 0 auto;
-    padding: 5rem;
+    padding: 2rem;
     background-color: #141414;
     color: #fff;
-    margin-top: 70px;
   }
   
   .faq-title {
+    margin-top: 50px;
     font-size: 2rem;
     text-align: center;
+    margin-bottom: 1.5rem;
   }
   
   .faq-container {
@@ -37,5 +38,49 @@
     margin-top: 0.5rem;
     font-size: 1rem;
     color: #b3b3b3;
+  }
+  
+  @media (max-width: 768px) {
+    .faq-page {
+      padding: 1.5rem;
+    }
+  
+    .faq-title {
+      font-size: 1.8rem;
+    }
+  
+    .faq-question {
+      font-size: 1.1rem;
+    }
+  
+    .faq-toggle {
+      font-size: 1.3rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faq-page {
+      padding: 1rem;
+    }
+  
+    .faq-title {
+      font-size: 1.5rem;
+    }
+  
+    .faq-question {
+      font-size: 1rem;
+    }
+  
+    .faq-toggle {
+      font-size: 1.2rem;
+    }
+  
+    .faq-answer {
+      font-size: 0.9rem;
+    }
   }
   
