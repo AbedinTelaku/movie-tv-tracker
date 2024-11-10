@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import "./HeaderPageStyle.css";
+import { Link } from 'react-router-dom';
 
-const HeaderPageComponent = ({ onSearch }) => { // Accept onSearch as a prop
+
+const HeaderPageComponent = ({ onSearch }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -33,25 +35,27 @@ const HeaderPageComponent = ({ onSearch }) => { // Accept onSearch as a prop
   const handleSearchChange = (e) => {
     const value = e.target.value;
     setSearchTerm(value);
-    onSearch(value); // Pass the search term up to the parent
+    onSearch(value);
   };
 
   return (
     <header className={`header-main ${isScrolled ? "scrolled" : ""}`}>
-      <img
-        src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-        alt="Netflix Logo"
-        className="logo"
-      />
+      <Link to="/">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
+          alt="Netflix Logo"
+          className="logo"
+        />
+      </Link>
       <div className="hamburger" onClick={handleMenuToggle}>
         <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
       </div>
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
-          <li>Home</li>
-          <li>Series</li>
-          <li>Movies</li>
-          <li>New & Popular</li>
+          <li><a href="/home"></a> Home</li>
+          <li> <a href="/series"></a> Series</li>
+          <li> <a href="/movies"></a> Movies</li>
+          <li> <a href="popular"></a> New & Popular</li>
           <li>
             <i className="fas fa-search search-icon" onClick={handleSearchClick}></i>
             {isSearchOpen && (
