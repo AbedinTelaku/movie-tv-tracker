@@ -7,9 +7,13 @@ import Dubbing from './pages/Dubbing';
 import Faq from './pages/Faq';
 import Team from './pages/Team';
 import HomeAlonePage from './components/DubbingComponent/Films/HomeAlonePage';
+import Header from './pages/Header';
+import Footer from './pages/Footer';
 
 function App() {
   return (
+    <>
+    <Header/>
     <Routes>
       <Route path="/" element={<HomePage />} />
       <Route path="/contact" element={<ContactUs />} />
@@ -18,6 +22,8 @@ function App() {
       <Route path="/team" element={<Team />} />
       <Route path="/home-alone" element={<HomeAlonePage/>} />
     </Routes>
+    <Footer/>
+    </>
   );
 }
 

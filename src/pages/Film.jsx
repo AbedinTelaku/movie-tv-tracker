@@ -1,14 +1,15 @@
 import React from 'react'
-import Header from "./Header"
-import HomeAlonePage from "../components/DubbingComponent/Films/HomeAlonePage"
-import Footer from "./Footer"
+import HomeAlonePage from '../components/DubbingComponent/Films/HomeAlonePage';
+import FooterComponent from '../components/Footer/FooterComponent';
+import Header from './Header';
+
 
 const Film = () => {
   return (
     <div>
       <Header/>
       <HomeAlonePage/>
-      <Footer/>
+      <FooterComponent/>
     </div>
   )
 }

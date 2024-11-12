@@ -3,7 +3,7 @@ import DubbingComponent from '../components/DubbingComponent/DubbingComponent'
 import Footer from './Footer'
 import Header from './Header'
 
-const Actor = () => {
+const Dubbing = () => {
   return (
     <div>
         <Header/>
@@ -13,4 +13,4 @@ const Actor = () => {
   )
 }
 
-export default Actor
+export default Dubbing;

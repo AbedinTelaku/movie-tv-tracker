@@ -3,6 +3,19 @@
     color: white;
     background-color: #141414;
     text-align: center;
+    background-image: url('https://images.moviesanywhere.com/movie-hero/1526c665489e8c2d62e22c8f5993545e.jpeg?r=16x9&w=2560');
+    background-size: cover;
+
+  }
+  .home-alone-page::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: -1;
   }
   
   .home-alone-page h2 {
@@ -25,9 +38,10 @@
   }
   
   .film-info p {
-    font-size: 18px;
-    color: #ccc;
+    font-size: 24px;
+    color: black;
     line-height: 1.6;
+    max-width: 600px;
   }
   
   .film-player {
