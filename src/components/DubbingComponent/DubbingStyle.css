@@ -1,0 +1,101 @@
+.dubbing-container {
+    padding: 20px;
+    background-color: #141414;
+    background-image: url('https://image.tmdb.org/t/p/w500/kjGG3W6fslRL1d4vRsmZj7zxQXO.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+  }
+  
+  .dubbing-container h2 {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .films-list {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .film-card {
+    flex: 1 1 20%;
+    max-width: 250px;
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.2s;
+  }
+  
+  .film-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .film-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .film-info {
+    padding: 10px;
+  }
+  
+  .film-info h3 {
+    margin: 0;
+    font-size: 18px;
+  }
+  
+  .film-info p {
+    margin: 5px 0;
+    color: #999;
+    font-size: 14px;
+  }
+  
+  @media (max-width: 768px) {
+    .film-card {
+      flex: 1 1 45%;
+      max-width: 45%;
+    }
+  
+    .film-card img {
+      height: 250px;
+    }
+  
+    .film-info h3 {
+      font-size: 16px;
+    }
+  
+    .film-info p {
+      font-size: 13px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dubbing-container h2 {
+      font-size: 20px;
+    }
+  
+    .film-card {
+      flex: 1 1 100%;
+      max-width: 100%;
+    }
+  
+    .film-card img {
+      height: 200px;
+    }
+  
+    .film-info h3 {
+      font-size: 14px;
+    }
+  
+    .film-info p {
+      font-size: 12px;
+    }
+  }
+  

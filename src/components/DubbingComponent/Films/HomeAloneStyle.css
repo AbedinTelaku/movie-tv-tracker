@@ -1,0 +1,46 @@
+.home-alone-page {
+    padding: 20px;
+    color: white;
+    background-color: #141414;
+    text-align: center;
+  }
+  
+  .home-alone-page h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  
+  .film-details {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+  
+  .film-poster {
+    max-width: 300px;
+    border-radius: 8px;
+  }
+  
+  .film-info p {
+    font-size: 18px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  
+  .film-player {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  .film-iframe {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+    border-radius: 8px;
+  }
+  

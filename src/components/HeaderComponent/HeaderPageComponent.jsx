@@ -52,10 +52,10 @@ const HeaderPageComponent = ({ onSearch }) => {
       </div>
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
-          <li><a href="/home"></a> Home</li>
-          <li> <a href="/dubbing"></a> Dubbing</li>
-          <li> <a href="/movies"></a> Movies</li>
-          <li> <a href="popular"></a> New & Popular</li>
+          <li><Link to="/">Home</Link></li>
+          <li><Link to="/dubbing">Dubbing</Link></li>
+          <li><Link to="/movies">Movies</Link></li>
+          <li><Link to="/movies">New & Popular</Link></li>
           <li>
             <i className="fas fa-search search-icon" onClick={handleSearchClick}></i>
             {isSearchOpen && (
