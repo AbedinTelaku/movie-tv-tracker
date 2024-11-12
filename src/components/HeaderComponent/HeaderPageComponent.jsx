@@ -53,7 +53,7 @@ const HeaderPageComponent = ({ onSearch }) => {
       <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
         <ul>
           <li><a href="/home"></a> Home</li>
-          <li> <a href="/series"></a> Series</li>
+          <li> <a href="/dubbing"></a> Dubbing</li>
           <li> <a href="/movies"></a> Movies</li>
           <li> <a href="popular"></a> New & Popular</li>
           <li>
