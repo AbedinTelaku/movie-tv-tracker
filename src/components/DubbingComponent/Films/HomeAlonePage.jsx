@@ -13,7 +13,8 @@ const HomeAlonePage = () => {
                     className="film-poster"
                 />
                 <div className="film-info">
-                    <p><strong>Release Date:</strong> 2000</p>
+                    <p><strong>Release Date:</strong></p>
+                    <p><strong>2000</strong></p>
                     <p><strong>Genre:</strong> Comedy, Family</p>
                     <p>
                         <strong>Description:</strong> One year after Kevin was left home alone and had to defeat a pair of bumbling burglars, he accidentally finds himself stranded in New York City - and the same criminals are not far behind.
