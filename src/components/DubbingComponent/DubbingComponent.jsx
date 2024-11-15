@@ -9,6 +9,14 @@ const DubbingComponent = () => {
             title: 'Home Alone 2',
             release_date: '2000',
             poster_path: 'https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRrdsA4OHZftYGLKuVIFKmOdzZFyIJSrbsZ840-9QyXPB7vbecW00RVM0jd6vhb3VAwwC8X',
+            link: '/home-alone'
+        },
+        {
+            id: 2,
+            title: 'Moana',
+            release_date: '2016',
+            poster_path: 'https://lumiere-a.akamaihd.net/v1/images/eu_moana-movie_hero_m_006c78bd.jpeg',
+            link: '/moana'
         }
     ];
 
@@ -18,7 +26,7 @@ const DubbingComponent = () => {
             <div className="films-list">
                 {dubbingFilms.map((film) => (
                     <div className="film-card" key={film.id}>
-                        <Link to="/home-alone">
+                        <Link to={film.link}>
                             <img
                                 src={film.poster_path}
                                 alt={film.title}

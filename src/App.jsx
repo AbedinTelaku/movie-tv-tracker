@@ -6,9 +6,11 @@ import '@fortawesome/fontawesome-free/css/all.min.css';
 import Dubbing from './pages/Dubbing';
 import Faq from './pages/Faq';
 import Team from './pages/Team';
-import HomeAlonePage from './components/DubbingComponent/Films/HomeAlonePage';
 import Header from './pages/Header';
 import Footer from './pages/Footer';
+import HomeAlonePage from './components/DubbingComponent/Films/HomeAlone/HomeAlonePage';
+import MoanaPage from './components/DubbingComponent/Films/Moana/MoanaPage';
+
 
 function App() {
   return (
@@ -21,6 +23,9 @@ function App() {
       <Route path="/faq" element={<Faq />} />
       <Route path="/team" element={<Team />} />
       <Route path="/home-alone" element={<HomeAlonePage/>} />
+      <Route path="/moana" element={ <MoanaPage/>} />
+
+      
     </Routes>
     <Footer/>
     </>
