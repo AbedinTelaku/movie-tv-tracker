@@ -8,7 +8,6 @@ const Dubbing = () => {
     <div>
         <Header/>
         <DubbingComponent />
-        <Footer/>
     </div>
   )
 }

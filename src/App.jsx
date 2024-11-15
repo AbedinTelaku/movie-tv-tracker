@@ -10,6 +10,7 @@ import Header from './pages/Header';
 import Footer from './pages/Footer';
 import HomeAlonePage from './components/DubbingComponent/Films/HomeAlone/HomeAlonePage';
 import MoanaPage from './components/DubbingComponent/Films/Moana/MoanaPage';
+import KungFuPandaPage from './components/DubbingComponent/Films/Panda/PandaPage';
 
 
 function App() {
@@ -24,6 +25,8 @@ function App() {
       <Route path="/team" element={<Team />} />
       <Route path="/home-alone" element={<HomeAlonePage/>} />
       <Route path="/moana" element={ <MoanaPage/>} />
+      <Route path="/panda" element={ <KungFuPandaPage/>} />
+
 
       
     </Routes>
