@@ -1,4 +1,3 @@
-// MoanaPage.js
 import React from 'react';
 import './MoanaStyle.css';
 

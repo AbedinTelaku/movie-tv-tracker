@@ -23,7 +23,7 @@ const DubbingComponent = () => {
             title: 'Kung Fu Panda 4',
             release_date: '2024',
             poster_path: 'https://play-lh.googleusercontent.com/ulf9BSafUkyorBbuqm3HudT8ZS6iqKhdbiZbbO3XpuTkhU6K28qjyoPcMLQEemNN9GNAfJ7JQDXkzzzZlw',
-            link: '/kung-fu-panda-4'
+            link: '/panda'
         },
         {
             id: 4,

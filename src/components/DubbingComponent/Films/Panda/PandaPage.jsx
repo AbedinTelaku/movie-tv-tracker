@@ -1,7 +1,7 @@
 import React from 'react';
 import './PandaStyle.css';
 
-const KungFuPandaPage = () => {
+const PandaPage = () => {
     return (
         <div className="kungfu-panda-page">
             <h2>Kung Fu Panda 4 (2024)</h2>
@@ -32,4 +32,4 @@ const KungFuPandaPage = () => {
     );
 };
 
-export default KungFuPandaPage;
+export default PandaPage;
