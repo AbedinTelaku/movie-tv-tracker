@@ -18,7 +18,6 @@ const HotelTransylvania1Page = () => {
                 />
                 <h2>Hotel Transylvania 1</h2> 
                 <div className="film-info">
-                    <p><strong>Release Date:</strong> 2012</p>
                     <p><strong>Genre:</strong> Animation, Comedy, Family</p>
                     <p>
                         <strong>Description:</strong> Dracula runs a high-end resort for monsters and encounters unexpected challenges when a human stumbles upon his hotel.
