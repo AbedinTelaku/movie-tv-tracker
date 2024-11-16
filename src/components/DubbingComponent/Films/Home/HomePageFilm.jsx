@@ -1,15 +1,22 @@
 import React from 'react';
+import "../FilmsDubbingStyle.css"
 
-const HomePage = () => {
+const HomePageFilm = () => {
     return (
         <div className="film-page">
             <h2>Home</h2>
-            <div className="film-details">
-                <img
-                    src="https://upload.wikimedia.org/wikipedia/en/5/58/Home_%282015_film%29_poster.jpg"
-                    alt="Home"
-                    className="film-poster"
-                />
+            <div className="film-details"
+            style={{
+                backgroundImage: `url("https://images.alphacoders.com/803/thumb-1920-803947.jpg")`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center', 
+                backgroundRepeat: 'no-repeat', 
+                height: '100vh', 
+                margin: 0, 
+                padding: 0, 
+                overflow: 'hidden',
+            }}>
+                
                 <div className="film-info">
                     <p><strong>Release Date:</strong> 2015</p>
                     <p><strong>Genre:</strong> Animation, Comedy</p>
@@ -21,7 +28,7 @@ const HomePage = () => {
 
             <div className="film-player">
                 <iframe
-                    src="https://vidmoly.to/embed-xyz.html"
+                    src="https://vidmoly.to/embed-o94c2dk4sfom.html"
                     title="Home"
                     allowFullScreen
                     className="film-iframe"
@@ -31,4 +38,4 @@ const HomePage = () => {
     );
 };
 
-export default HomePage;
+export default HomePageFilm;

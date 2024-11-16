@@ -6,14 +6,13 @@ const ArthursChristmasPage = () => {
             <h2>Arthur's Christmas</h2>
             <div className="film-details"
             style={{
-                backgroundImage: `url("https://images6.alphacoders.com/797/797593.jpg")`,
+                backgroundImage: `url("https://wallpapercave.com/wp/wp6808989.jpg")`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'center', 
-                backgroundRepeat: 'no-repeat', 
-                
-                height: '100vh', 
-                margin: 0, 
-                padding: 0, 
+                backgroundPosition: 'center',
+                backgroundRepeat: 'no-repeat',
+                height: '100vh',
+                margin: 0,
+                padding: 0,
                 overflow: 'hidden',
             }}>
                 <div className="film-info">

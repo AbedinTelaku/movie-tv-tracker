@@ -100,7 +100,7 @@ const DubbingComponent = () => {
             title: 'Home',
             release_date: '2015',
             poster_path: 'https://images.flickdirect.com/movies/home/home-poster.jpg',
-            link: '/home'
+            link: '/home-film'
         },
         {
             id: 17,

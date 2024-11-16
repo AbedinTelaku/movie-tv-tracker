@@ -14,6 +14,7 @@ import KungFuPandaPage from './components/DubbingComponent/Films/Panda/PandaPage
 import CarsPage from './components/DubbingComponent/Films/Cars/CarsPage';
 import HotelTransylvania1Page from './components/DubbingComponent/Films/HotelTransylvania1/HotelTransylvania1Page';
 import ArthursChristmasPage from './components/DubbingComponent/Films/ArthursChristmas/ArthursChristmasPage';
+import HomePageFilm from './components/DubbingComponent/Films/Home/HomePageFilm';
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
       <Route path="/cars" element={ <CarsPage/>} />
       <Route path="/hotel-transylvania-1" element={ <HotelTransylvania1Page/>} />
       <Route path="/arthurs-christmas" element={ <ArthursChristmasPage/>} />
+      <Route path="/home-film" element={ <HomePageFilm/>} />
 
 
       
