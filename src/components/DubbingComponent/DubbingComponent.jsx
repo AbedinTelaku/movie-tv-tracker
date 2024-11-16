@@ -61,13 +61,6 @@ const DubbingComponent = () => {
             link: '/inside-my-mind-2'
         },
         {
-            id: 10,
-            title: 'Dragon\'s Desire',
-            release_date: '2020',
-            poster_path: 'https://m.media-amazon.com/images/M/MV5BMWM1YmJmYWMtMDM1Ni00ZGM2LTkxODYtOTU1ZjA4MTFkMDM1XkEyXkFqcGc@._V1_.jpg',
-            link: '/dragons-desire'
-        },
-        {
             id: 11,
             title: 'Arthur\'s Christmas',
             release_date: '2011',

@@ -1,13 +1,23 @@
 import React from 'react';
-import './PandaStyle.css';
+import '../FilmsDubbingStyle.css';
 
 const PandaPage = () => {
     return (
-        <div className="kungfu-panda-page">
-            <h2>Kung Fu Panda 4 (2024)</h2>
-            <div className="film-details">
+        <div className="film-page">
+            <div className="film-details"
+            style={{
+                backgroundImage: `url("https://images5.alphacoders.com/134/1344939.jpeg")`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'center', 
+                backgroundRepeat: 'no-repeat', 
+                width: '100vw',
+                height: '100vh', 
+                margin: 0, 
+                padding: 0, 
+                overflow: 'hidden',
+            }}>
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Kung_Fu_Panda_4_teaser_poster.jpg/220px-Kung_Fu_Panda_4_teaser_poster.jpg"
+                    src=""
                     alt="Kung Fu Panda 4"
                     className="film-poster"
                 />

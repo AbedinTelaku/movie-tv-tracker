@@ -1,9 +1,9 @@
 import React from 'react';
-import './HomeAloneStyle.css';
+import '../FilmsDubbingStyle.css';
 
 const HomeAlonePage = () => {
     return (
-        <div className="home-alone-page">
+        <div className="film-page">
             <h2>Home Alone 2</h2>
             <div className="film-details">
                 <img

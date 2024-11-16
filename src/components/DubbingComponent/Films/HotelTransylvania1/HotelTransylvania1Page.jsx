@@ -1,12 +1,18 @@
 import React from 'react';
-
+import "../FilmsDubbingStyle.css";
 const HotelTransylvania1Page = () => {
     return (
-        <div className="film-page">
-            <h2>Hotel Transylvania</h2>
+        <div className="film-page"
+        style={{
+            backgroundImage: `url("https://images7.alphacoders.com/334/334823.jpg")`,
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            height: '100vh',
+        }}>
             <div className="film-details">
                 <img
-                    src="https://upload.wikimedia.org/wikipedia/en/f/f8/Hotel_Transylvania_%282012%29_poster.jpg"
+                    src=""
                     alt="Hotel Transylvania"
                     className="film-poster"
                 />
@@ -21,7 +27,7 @@ const HotelTransylvania1Page = () => {
 
             <div className="film-player">
                 <iframe
-                    src="https://vidmoly.to/embed-xyz.html"
+                    src="https://vidmoly.to/embed-8xjvn27ouj9i.html"
                     title="Hotel Transylvania"
                     allowFullScreen
                     className="film-iframe"
