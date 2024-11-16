@@ -15,6 +15,7 @@ const ArthursChristmasPage = () => {
                 padding: 0,
                 overflow: 'hidden',
             }}>
+                <h2>Arthur Christmas</h2> 
                 <div className="film-info">
                     <p><strong>Release Date:</strong> 2011</p>
                     <p><strong>Genre:</strong> Animation, Family, Comedy</p>

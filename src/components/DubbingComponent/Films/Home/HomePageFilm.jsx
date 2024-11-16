@@ -16,7 +16,7 @@ const HomePageFilm = () => {
                 padding: 0, 
                 overflow: 'hidden',
             }}>
-                
+               <h2>HOME</h2> 
                 <div className="film-info">
                     <p><strong>Release Date:</strong> 2015</p>
                     <p><strong>Genre:</strong> Animation, Comedy</p>

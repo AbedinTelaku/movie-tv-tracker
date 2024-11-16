@@ -11,6 +11,7 @@ const HomeAlonePage = () => {
                     alt="Home Alone 2"
                     className="film-poster"
                 />
+                <h2>Home Alone</h2> 
                 <div className="film-info">
                     <p><strong>Release Date:</strong></p>
                     <p><strong>2000</strong></p>

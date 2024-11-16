@@ -13,6 +13,7 @@ const CarsPage = () => {
                 height: '100vh',
             }}
         >
+            <h2>Cars</h2> 
             <div className="film-details">
                 <div className="film-info">
                     <p><strong>Release Date:</strong> 2006</p>

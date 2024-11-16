@@ -10,6 +10,7 @@ const HotelTransylvania2Page = () => {
                     alt="Hotel Transylvania 2"
                     className="film-poster"
                 />
+                <h2>Hotel Translylvania 2</h2> 
                 <div className="film-info">
                     <p><strong>Release Date:</strong> 2015</p>
                     <p><strong>Genre:</strong> Animation, Comedy, Family</p>
