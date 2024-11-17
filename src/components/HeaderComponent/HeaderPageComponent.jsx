@@ -1,79 +1,59 @@
-import React, { useEffect, useState } from 'react';
-import "./HeaderPageStyle.css";
+import React, { useState, useEffect } from 'react';
+import './HeaderPageStyle.css';
 import { Link } from 'react-router-dom';
+import { motion } from 'framer-motion';
 
-
-const HeaderPageComponent = ({ onSearch }) => {
+const HeaderPageComponent = () => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
-        setIsScrolled(true);
-      } else {
-        setIsScrolled(false);
-      }
+      setIsScrolled(window.scrollY > 100);
     };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSearchClick = () => {
-    setIsSearchOpen(!isSearchOpen);
-  };
-
-  const handleMenuToggle = () => {
-    setIsMenuOpen(!isMenuOpen);
-  };
-
-  const handleSearchChange = (e) => {
-    const value = e.target.value;
-    setSearchTerm(value);
-    onSearch(value);
-  };
+  const handleMenuToggle = () => setIsMenuOpen(!isMenuOpen);
 
   return (
-    <header className={`header-main ${isScrolled ? "scrolled" : ""}`}>
-      <Link to="/">
+    <motion.header
+      className={`header-main ${isScrolled ? 'scrolled' : ''}`}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <Link to="/" className="logo-link">
         <img
           src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"
-          alt="Netflix Logo"
+          alt="Logo"
           className="logo"
         />
       </Link>
       <div className="hamburger" onClick={handleMenuToggle}>
-        <i className={`fas ${isMenuOpen ? "fa-times" : "fa-bars"}`}></i>
+        <i className={`fas ${isMenuOpen ? 'fa-times' : 'fa-bars'}`}></i>
       </div>
-      <nav className={`nav-links ${isMenuOpen ? "open" : ""}`}>
+      <nav className={`nav-links ${isMenuOpen ? 'open' : ''}`}>
         <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/dubbing">Dubbing</Link></li>
-          <li><Link to="/movies">Movies</Link></li>
-          <li><Link to="/movies">New & Popular</Link></li>
           <li>
-            <i className="fas fa-search search-icon" onClick={handleSearchClick}></i>
-            {isSearchOpen && (
-              <div className="search-dropdown">
-                <input
-                  type="text"
-                  placeholder="Search..."
-                  value={searchTerm}
-                  onChange={handleSearchChange}
-                  className="search-bar"
-                />
-                <button className='fas fa-search search-icon button-search'></button>
-              </div>
-            )}
+            <Link to="/">Home</Link>
+          </li>
+          <li>
+            <Link to="/dubbing">Dubbing</Link>
+          </li>
+          <li>
+            <Link to="/movies">Movies</Link>
+          </li>
+          <li>
+            <Link to="/faq">FAQ</Link>
+          </li>
+          <li>
+            <Link to="/team">Team</Link>
           </li>
         </ul>
       </nav>
-    </header>
+    </motion.header>
   );
 };
 
