@@ -12,7 +12,7 @@ const HomePage = () => {
       <HeaderPageComponent onSearch={setSearchTerm} />
       <HomePageComponent />
       <FilmsComponent searchTerm={searchTerm} />
-      <Footer />
+      
     </div>
   );
 };
