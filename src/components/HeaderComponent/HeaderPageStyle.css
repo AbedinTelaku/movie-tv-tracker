@@ -1,4 +1,3 @@
-/* Global Reset */
 body, html {
   margin: 0;
   padding: 0;
@@ -6,7 +5,6 @@ body, html {
   font-family: 'Arial', sans-serif;
 }
 
-/* Header Styling */
 .header-main {
   position: fixed;
   top: 0;
@@ -68,7 +66,6 @@ body, html {
   transform: translateX(0);
 }
 
-/* Responsive Design */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
