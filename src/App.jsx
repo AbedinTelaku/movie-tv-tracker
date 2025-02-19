@@ -9,6 +9,7 @@ import Team from './pages/Team';
 import Header from './components/HeaderComponent/HeaderPageComponent';
 import Footer from './pages/Footer';
 import AllFilms from './components/DubbingComponent/AllFilms';
+import Movies from './components/Movies/Movies';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/faq" element={<Faq />} />
         <Route path="/team" element={<Team />} />
         <Route path="/dubbing/:id" element={<AllFilms />} />
+        <Route path="/movies" element={<Movies />} />
       </Routes>
       <Footer />
     </>

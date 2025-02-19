@@ -1,5 +1,16 @@
 const filmsData = [
     {
+        "id": 0,
+        "title": "The Wild Robot",
+        "release_date": "2025",
+        "poster_path": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSXoPiPjnwsqQMPiVwmtYEDK-hejRT4CMZzGA&s",
+        "genre": "Animation, Comedy",
+        "iframe_link": "https://vidmoly.to/embed-vgo9pprjan5b.html",
+        "description": "In a futuristic world, a robot finds itself stranded on a deserted island. As it adapts to its surroundings, it learns the ways of nature, befriends wild animals, and discovers what it means to truly be alive.",
+        "photo_background": "https://images8.alphacoders.com/138/1380777.jpg",
+        "link": "/dubbing/the-wild-robot"
+    },
+    {
         id: 1,
         title: 'Home Alone 2',
         release_date: '1992',
@@ -218,7 +229,7 @@ const filmsData = [
         description: 'Tom and Jerry join forces with Jonny Quest and his team to take down an evil mastermind.',
         photo_background: 'https://beam-images.warnermediacdn.com/BEAM_LWM_DELIVERABLES/528fdbf2-18ff-4d16-b325-73e68beaee93/543d6720f4448b331a8392904f77dd1560f8480d.jpg?host=wbd-images.prod-vod.h264.io&partner=beamcom',
         link:"/dubbing/tom-and-jerry-spy-quest"
-    }
+    },
 ];
 
 export default filmsData;
