@@ -11,6 +11,7 @@ const moviesData = [
         link: '/movies/the-beekeeper'
     },
     // Add more movie objects here
+    
 ];
 
 export default moviesData;
